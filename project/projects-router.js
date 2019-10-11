@@ -25,4 +25,15 @@ router.post("/", (req, res) => {
     });
 });
 
+router.put("/:id", (req, res) => {
+  const { id } = req.params;
+  Projects.update(id, req.body)
+    .then(updatedProject => {
+      res.status(200).json(updatedProject);
+    })
+    .catch(err => {
+      res.status(500).json(err);
+    });
+});
+
 module.exports = router;
