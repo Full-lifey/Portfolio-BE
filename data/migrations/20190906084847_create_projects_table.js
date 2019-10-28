@@ -7,7 +7,7 @@ exports.up = function(knex) {
     tbl.string("deployment", 512).notNullable();
     tbl.string("repo", 512).notNullable();
     tbl.string("demo", 256);
-    tbl.string("preview", 128).notNullable();
+    tbl.string("preview", 256).notNullable();
   });
 };
 
