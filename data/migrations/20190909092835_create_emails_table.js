@@ -5,6 +5,7 @@ exports.up = function(knex) {
     tbl.string("from", 128).notNullable();
     tbl.string("subject", 512).notNullable();
     tbl.string("text").notNullable();
+    tbl.string("phone", 16);
     tbl.string("html").notNullable();
   });
 };

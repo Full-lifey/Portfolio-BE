@@ -13,7 +13,7 @@ exports.seed = function(knex) {
           deployment: "https://secret-family-recipes-marketing.netlify.com/",
           repo: "https://github.com/family-recipes-buildweek/Joel-Perez-UI",
           description:
-            "Secret Family Recipes is a web application built to securely store, access and pass down family recipes for generations. <br> <br> I was given four days to design and build the marketing/landing page for the app. I began looking for inspiration and quickly came to the conclusion that the biggest impact design comes from great photographs. That decision led me to design a carousel with a moving call to action to drive new account creation."
+            "Secret Family Recipes is a web application built to securely store, access and pass down family recipes for generations. I was given four days to design and build the marketing/landing page for the app. I began looking for inspiration and quickly came to the conclusion that the biggest impact design comes from great photographs. That decision led me to design a carousel with a moving call to action to drive new account creation"
         },
         {
           title: "Tabless Thursday",
