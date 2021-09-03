@@ -9,7 +9,7 @@ module.exports = {
 };
 
 function find() {
-  return db("projects").orderBy("id", "desc");
+  return db("projects");
 }
 
 async function add(project) {
