@@ -1,5 +1,3 @@
-const knex = require("knex");
-
 const db = require("../data/db-config.js");
 
 module.exports = {
@@ -7,7 +5,7 @@ module.exports = {
   add,
   findById,
   update,
-  remove
+  remove,
 };
 
 function find() {
@@ -21,21 +19,15 @@ async function add(project) {
 }
 
 function findById(id) {
-  return db("projects")
-    .where({ id })
-    .first();
+  return db("projects").where({ id }).first();
 }
 
 async function update(id, changes) {
-  const updatedProject = await db("projects")
-    .update(changes)
-    .where({ id });
+  await db("projects").update(changes).where({ id });
 
   return findById(id);
 }
 
 function remove(id) {
-  return db("projects")
-    .del()
-    .where({ id });
+  return db("projects").del().where({ id });
 }
